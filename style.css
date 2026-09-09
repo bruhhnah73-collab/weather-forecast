@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #74ebd5, #4facfe);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.weather-app {
+    width: 100%;
+    max-width: 500px;
+    padding: 35px;
+    background: rgba(255, 255, 255, 0.92);
+    border-radius: 25px;
+    text-align: center;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    margin-bottom: 25px;
+    color: #123;
+}
+
+.search-box {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.search-box input {
+    flex: 1;
+    padding: 14px;
+    border: 2px solid #ddd;
+    border-radius: 12px;
+    font-size: 16px;
+    outline: none;
+}
+
+.search-box input:focus {
+    border-color: #4facfe;
+}
+
+.search-box button {
+    padding: 14px 20px;
+    border: none;
+    border-radius: 12px;
+    background: #1683d8;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.search-box button:hover {
+    opacity: 0.85;
+}
+
+.weather-result {
+    padding: 10px;
+}
+
+#cityName {
+    font-size: 28px;
+    color: #123;
+    margin-bottom: 10px;
+}
+
+.weather-icon {
+    font-size: 70px;
+    margin: 10px 0;
+}
+
+.temperature {
+    font-size: 55px;
+    font-weight: bold;
+    color: #1683d8;
+}
+
+#description {
+    font-size: 18px;
+    color: #555;
+    margin: 10px 0 25px;
+    text-transform: capitalize;
+}
+
+.weather-details {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+
+.detail-card {
+    flex: 1;
+    padding: 20px;
+    background: #f1f7fc;
+    border-radius: 15px;
+}
+
+.detail-card span {
+    font-size: 30px;
+}
+
+.detail-card p {
+    margin: 8px 0;
+    color: #666;
+}
+
+.detail-card strong {
+    font-size: 20px;
+    color: #123;
+}
+
+.error-message {
+    margin-top: 20px;
+    color: #d62828;
+    font-weight: bold;
+}
+
+@media (max-width: 500px) {
+    .weather-app {
+        padding: 25px 20px;
+    }
+
+    .search-box {
+        flex-direction: column;
+    }
+
+    .weather-details {
+        flex-direction: column;
+    }
+}
