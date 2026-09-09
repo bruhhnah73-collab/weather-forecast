@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Weather Dashboard</title>
-    <link rel="icon" type="image/png" href="logo.png">
 
+    <link rel="icon" type="image/png" href="logo.png">
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -35,6 +35,9 @@
 
         </div>
 
+
+        <!-- CURRENT WEATHER -->
+
         <div id="weatherResult" class="weather-result">
 
             <h2 id="cityName">
@@ -59,6 +62,7 @@
                 Weather information will appear here
             </p>
 
+
             <div class="weather-details">
 
                 <div class="detail-card">
@@ -72,6 +76,7 @@
                     </strong>
 
                 </div>
+
 
                 <div class="detail-card">
 
@@ -89,12 +94,35 @@
 
         </div>
 
+
+        <!-- 7-DAY FORECAST -->
+
+        <div class="forecast">
+
+            <h3>📅 7-Day Forecast</h3>
+
+            <div
+                id="forecastContainer"
+                class="forecast-container"
+            >
+
+                <!-- Forecast cards will appear here -->
+
+            </div>
+
+        </div>
+
+
+        <!-- ERROR MESSAGE -->
+
         <p
             id="errorMessage"
             class="error-message"
         ></p>
 
+
     </div>
+
 
     <script src="script.js"></script>
 
