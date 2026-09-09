@@ -136,3 +136,48 @@ h1 {
         flex-direction: column;
     }
 }
+/* DARK MODE */
+
+body.dark-mode {
+    background: linear-gradient(135deg, #0f172a, #1e293b);
+}
+
+body.dark-mode .weather-app {
+    background: rgba(30, 41, 59, 0.95);
+}
+
+body.dark-mode h1,
+body.dark-mode #cityName {
+    color: white;
+}
+
+body.dark-mode #description {
+    color: #cbd5e1;
+}
+
+body.dark-mode .detail-card {
+    background: #334155;
+}
+
+body.dark-mode .detail-card p {
+    color: #cbd5e1;
+}
+
+body.dark-mode .detail-card strong {
+    color: white;
+}
+
+#darkModeButton {
+    margin-bottom: 20px;
+    padding: 10px 16px;
+    border: none;
+    border-radius: 10px;
+    background: #1e293b;
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+#darkModeButton:hover {
+    opacity: 0.85;
+}
