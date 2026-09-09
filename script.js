@@ -153,7 +153,33 @@ function getWeatherDescription(code) {
 
     return "Unknown";
 }
+// Dark mode
 
+const darkModeButton = document.getElementById("darkModeButton");
+
+darkModeButton.addEventListener("click", () => {
+
+    document.body.classList.toggle("dark-mode");
+
+    if (document.body.classList.contains("dark-mode")) {
+        darkModeButton.textContent = "☀️ Light Mode";
+        localStorage.setItem("darkMode", "enabled");
+    } else {
+        darkModeButton.textContent = "🌙 Dark Mode";
+        localStorage.setItem("darkMode", "disabled");
+    }
+
+});
+
+
+// Remember dark mode after refreshing
+
+if (localStorage.getItem("darkMode") === "enabled") {
+
+    document.body.classList.add("dark-mode");
+
+    darkModeButton.textContent = "☀️ Light Mode";
+}
 
 // Weather icons
 function getWeatherIcon(code) {
